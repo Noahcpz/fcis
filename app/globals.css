@@ -5,7 +5,17 @@
   padding:0px;
 }
 
-:root {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+header a {
+    margin-left: 20px;
+}
+
+:root {
+  
 }
 
