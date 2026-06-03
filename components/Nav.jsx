@@ -13,7 +13,7 @@ export default function Nav() {
             <Link href="/contact" className="nav-principal">Contact</Link>
             
             <Link href="/a-propos" className="nav-principal">A propos</Link>
-
+            
         </nav>
     )
 }
