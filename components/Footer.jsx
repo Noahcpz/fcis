@@ -16,7 +16,7 @@ export default function Footer (){
                 8 rue de la branche cherbourg
             </p>
 
-            <Link href="/mentions-legales">Mentions Légales</Link>
+            <Link href="/mentions-legales"><p class="nav-principal">Mentions Légales</p></Link>
             <p>
                 <FontAwesomeIcon icon={faCopyright} />{new Date().getFullYear()} FCIS varennes-sur-allier. Tous droits réservés
             </p>
