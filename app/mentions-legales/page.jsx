@@ -1,7 +1,7 @@
-export default function Mentionslegales(){
+export default function MentionsLegales(){
     return (
         <h1>
-            mentions legales
+            Mentions Legales
         </h1>
     )
 }
