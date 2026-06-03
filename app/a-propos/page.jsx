@@ -1,5 +1,8 @@
-export default function APropos() {
+export default function APropos(){
     return (
-        <h1>a propos</h1>
+        <h1>
+            a propos
+        </h1>
+        
     )
 }

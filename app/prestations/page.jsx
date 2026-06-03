@@ -1,5 +1,7 @@
-export default function Prestations() {
+export default function prestations(){
     return (
-        <h1>prestations</h1>
+        <h1>
+            prestations
+        </h1>
     )
 }
