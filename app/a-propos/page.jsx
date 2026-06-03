@@ -1,7 +1,7 @@
 export default function APropos(){
     return (
         <h1>
-            a propos
+            A propos
         </h1>
         
     )

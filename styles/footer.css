@@ -1,0 +1,30 @@
+footer{
+    color: #FFFFFF;
+    margin-top: auto;
+    position:fixed;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: gold;
+}
+
+.nav-icone{
+    padding:5px;
+    color: gold;
+    text-decoration: none;
+    font-size:17.5px;
+    font-family: "source-sans-3",sans-serif;
+    font-style: italic;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+}
+
+.icone{
+    padding:5px;
+    font-size: 17.5px;
+}
