@@ -1,9 +1,9 @@
 import Link from "next/link"
-import "../styles/nav.css"
+import "../styles/Nav.css"
 export default function Nav() {
     return (
         <nav>
-
+            
             <Link href="/" className="nav-principal">Accueil</Link>
 
             <Link href="/prestations-catalogues" className="nav-principal">Prestations-catalogue</Link>

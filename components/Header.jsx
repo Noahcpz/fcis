@@ -1,7 +1,7 @@
 import Nav from "./Nav"
 import Image from "next/image"
 import Link from "next/link"
-import"../styles/header.css"
+import"../styles/Header.css"
 
 export default function Header() {
     return (

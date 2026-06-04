@@ -1,0 +1,31 @@
+.hero a {
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    color: gold;
+    font-size: 30px;
+    font-family: "source-sans-3", sans-serif;
+    font-style: italic;
+    background-color: #3b3b3b;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.spitch-intro {
+    color: white;
+    font-size: 15px;
+    font-family: "source-sans-3";
+    padding-top: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    padding-bottom: 70px;
+}
