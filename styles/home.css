@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 @font-face {
     font-family: "source-sans-3";
     src: url("/fonts/SourceSans3-VariableFont_wght.ttf");
@@ -8,12 +15,38 @@
     font-size: 15px;
     font-family: "source-sans-3";
     padding-top: 20px;
+    line-height: 1.8;        
+    letter-spacing: 0.5px;   
+    margin-bottom: 10px;    
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    padding-bottom: 70px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    color: gold;
+    font-size: 30px;
+    font-family: "source-sans-3", sans-serif;
+    font-style: italic;
+    background-color: #3b3b3b;
+    padding:10px;
+    cursor:pointer;
+}
+
+.hero a {
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
 }
 
 .prestations{
     color:gold;
     font-style: italic;
     font-family: "source-sans-3";
+    padding-bottom: 50px;
 }
 .cards-prestations {
     display: flex;
@@ -45,4 +78,49 @@
 .card h4 {
     color: gold;
     margin-bottom: 10px;
+}
+
+h3{
+    color:white;
+    text-align: center;
+}
+
+.titre-reassurance{
+    color:#e8ae0e;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.reassurance{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.reassurance-certifs-conteneur{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.pci img {
+    width: 100px;
+    height: auto;
+}
+
+.pci h4 {
+    font-size: 20px;
+}
+
+.reassurance-certifs {
+    color: #DBC078;
+    border: 3px solid #DBC078;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
 }
