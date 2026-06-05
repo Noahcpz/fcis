@@ -1,4 +1,4 @@
-import "../styles/Spitch.css"
+import "../../styles/Home/Spitch.css"
 import Image from "next/image"
 export default function Spitch() {
     return (
@@ -8,13 +8,13 @@ export default function Spitch() {
         </h2>
         <p>
             Consultant indépendant spécialisé en gouvernance,
-            risques et conformité,j'accompagne les PME et grandes entreprises
-            dans la construction d'une stratégie cyber solide,pragmatique et alignée 
+            risques et conformité, j'accompagne les PME et grandes entreprises
+            dans la construction d'une stratégie cyber solide, pragmatique et alignée 
             sur leurs enjeux métier.
             Pas de solution générique une approche sur mesure,
             avec un interlocuteur unique.
         </p>    
-        <h3 className="titre-reassurance">Certifications et réferentiels</h3>
+        <h3 className="titre-reassurance">Référentiels et normes maîtrisées</h3>
         <div className="reassurance-certifs-conteneur">
           <div className="reassurance-certifs">
             <Image src="/img/iso-27001.png" alt="ISO 27001" width={150} height={100}/>

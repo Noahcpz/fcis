@@ -11,4 +11,5 @@ header a {
 img {
     max-width: 100%;
     height: auto;
+    margin-left: 10px;
 }

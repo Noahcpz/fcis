@@ -10,6 +10,16 @@
     background: linear-gradient(to bottom, #000000, #1a1a1a);
     padding-bottom: 70px;
 }
+
+.spitch-fcis p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'source-sans-3', sans-serif;
+    font-style: italic;
+    padding-bottom: 50px;
+}
+
 .reassurance {
     display: flex;
     flex-direction: column;
@@ -37,9 +47,11 @@
 }
 
 .titre-reassurance {
-    color: #e8ae0e;
+    color: #C7AE6A;
     font-size: 30px;
     padding-bottom: 50px;
+    font-family: "source-sans-3", sans-serif;
+    font-style: italic;
 }
 
 .pci img {

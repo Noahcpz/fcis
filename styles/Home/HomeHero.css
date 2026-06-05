@@ -1,3 +1,10 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
 .hero a {
     width: fit-content;
     margin: 0 auto;
@@ -5,16 +12,12 @@
     text-decoration: none;
 }
 
-button {
-    display: block;
-    margin: 0 auto;
-    color: gold;
-    font-size: 30px;
-    font-family: "source-sans-3", sans-serif;
+.hero p {
+    font-size: 18px;
+    font-family: 'source-sans-3', sans-serif;
     font-style: italic;
-    background-color: #3b3b3b;
-    padding: 10px;
-    cursor: pointer;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .spitch-intro {

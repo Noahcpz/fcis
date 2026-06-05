@@ -1,9 +1,9 @@
 import "../styles/Home.css"
-import Link from "next/link"
-import Image from "next/image"  
-import HomeHero from "../components/HomeHero"
-import Spitch from "../components/Spitch"
-import Cards from "../components/Cards"
+import HomeHero from "../components/home/HomeHero"
+import Spitch from "../components/home/Spitch"
+import Cards from "../components/home/Cards"
+import RappelContact from "../components/home/RappelContact"
+
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <HomeHero />
       <Spitch />
       <Cards />
+      <RappelContact />
     </main>
-  );
+  )
 }
