@@ -5,24 +5,24 @@
 }
 
 :root {
-  
 }
 
 @font-face {
     font-family: "Raleway";
-    src: url("/public/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+    src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "source-sans-3";
-    src: url("/public/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+    src: url("/fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,13 +33,28 @@ h1 {
     color: #C7AE6A;
     font-size: 60px;
     text-align: center;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: italic;
+    animation: apparition 1s ease-in-out;
+    padding-bottom: 20px;
 }
-h2{
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
     color: #C7AE6A;
     font-size: 40px;
     text-align: center;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: italic;
+    animation: apparition 1s ease-in-out;
 }
