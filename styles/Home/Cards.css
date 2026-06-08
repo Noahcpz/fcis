@@ -1,7 +1,9 @@
 .card {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     min-width: 200px;
-    max-width: 280px;
+    max-width: 350px;
     background-color: #3b3b3b;
     border: 1px solid gold;
     border-radius: 8px;
@@ -20,28 +22,59 @@
 
 .cards-conteneur {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .cards-prestations h2 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.card button {
+    display: block;
+    margin: auto auto 0 auto;
+    width: fit-content;
+    padding: 10px 20px;
 }
 
 .card h4 {
     color: gold;
-    margin-bottom: 10px;
+    margin-top:30px;
+    margin-bottom: 30px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
 }
 
 .cards-prestations {
     padding: 40px;
 }
 
-.card p {
+.card h3 {
+    padding-bottom: 30px;
+    padding-top:20px;
+    color: #C7AE6A;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    animation: apparition 1s ease-in-out;
+
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.card li {
+    color: rgb(190, 185, 155);
     font-size: 20px;
-    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "source-sans-3", sans-serif;
 }
