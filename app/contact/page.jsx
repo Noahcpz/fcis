@@ -1,7 +1,6 @@
-export default function Contact(){
+import FicheContact from "../../components/contact/fiche-contact"
+export default function Contact() {
     return (
-        <h1>
-            Contact
-        </h1>
+        <FicheContact />
     )
 }
