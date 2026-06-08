@@ -6,6 +6,7 @@ import { faPhone,faEnvelope,faHome,faCopyright } from '@fortawesome/free-solid-s
 export default function Footer (){
     return (
         <footer>
+            
             <p className="texte-icone">
                 <FontAwesomeIcon icon={faPhone} className="icone" />
                 00 00 00 00 00

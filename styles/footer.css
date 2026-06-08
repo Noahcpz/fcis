@@ -32,10 +32,11 @@ svg {
 }
 
 .texte-icone {
-    padding: 5px;
+    padding: 7px;
     font-size: 17.5px;
 }
 
 .icone {
     color: goldenrod;
+    margin-right: 8px;
 }
