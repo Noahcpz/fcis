@@ -6,7 +6,7 @@ export default function RappelContact(){
         <section className="rappel">
             <h2>Construisons ensemble votre sécurité</h2>
 
-            <p>Chaque jour sans stratégie Cyber est un risque en plus</p>
+            <h2>Chaque jour sans stratégie Cyber est un risque en plus</h2>
 
             <h3>Prenez une longueur d'avance — Un premier échange, sans engagement pour poser les bases :</h3>
 

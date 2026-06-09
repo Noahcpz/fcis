@@ -1,7 +1,9 @@
 .rappel h3{
-    color:gold;
+    color:#DBC078;
     font-size: 30px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-top:40px;
+    font-family: "Raleway", sans-serif;
 }
 
 .rappel a {
@@ -12,7 +14,8 @@
 }
 
 .rappel h2{
-    padding-top:20px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 button {
