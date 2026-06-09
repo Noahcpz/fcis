@@ -1,78 +1,41 @@
 import "../../styles/Home/Cards.css"
+import { getAllPrestations } from '@/server/PrestationsDal'
+import Link from "next/link"
 
-export default function Cards() {
+export default async function Cards() {
+    const prestations = await getAllPrestations()
+    console.log(prestations)
+    const slugs = {
+        7: 'structurer-et-certifier',
+        8: 'evaluer-et-cartographier',
+        9: 'former-et-accompagner'
+    }   
+
     return (
         <section className="cards-prestations">
             <h2>Comment FCIS vous accompagne</h2>
             <div className="cards-conteneur">
-                <div className="card">
-                    <h3>Evaluer et Cartographier</h3>
-                    <h4>
-                      Obtenez une vision claire <br />
-                      de votre exposition aux risques
-                    </h4>
-                    <ul>
-                        <li>
-                            Analyse de risques
-                        </li>
-                        <li>
-                            Gap analysis ISO 27001 & NIS2
-                        </li>
-                        <li>
-                            Audit organisationnel SSI
-                        </li>
-                        <li>
-                            Feuille de route priorisée
-                        </li>
-                    </ul>
-                    <button>
-                        en savoir plus sur cette prestation
-                    </button>
-                </div>
-                <div className="card">
-                    <h3>Structurer et Certifier</h3>
-                    <h4>
-                      Construisez un cadre de sécurité solide et reconnu
-                    </h4>
-                    <ul>
-                        <li>
-                            Rédaction de PSSI
-                        </li>
-                        <li>
-                            PCA/PRA avec BIA
-                        </li>
-                        <li>
-                            Acompagnement ISO 27001
-                        </li>
-                        <li>
-                            Préparation CyberVadis
-                        </li>
-                    </ul>
-                    <button>
-                        en savoir plus sur cette prestation
-                    </button>
-                </div>
-                <div className="card">
-                    <h3>Former et accompagner</h3>   
-                    <h4>
-                      Engagez vos équipes et ancrez la culture
-                    </h4>
-                    <ul>
-                        <li>
-                            Sensibilisation tous profils
-                        </li>
-                        <li>
-                            Supports,quiz et attestations
-                        </li>
-                        <li>
-                            Mission de conseil sur mesure
-                        </li>
-                    </ul>
-                    <button>
-                        en savoir plus sur cette prestation
-                    </button>
-                </div>
+                {prestations.map((p) => (
+                    <div className="card" key={p.id}>
+                        <h3>{p.titre}</h3>
+                        <h4>{p.sous_titre}</h4>
+                        <ul>
+                            {[p.detail_1, p.detail_2, p.detail_3, p.detail_4]
+                                .filter(Boolean)
+                                .map((detail, i) => (
+                                    <li key={i}>{detail}</li>
+                                ))
+                            }
+                        </ul>
+                        <Link href={`/prestations-details/${slugs[p.id]}`}>
+                            <button>
+                                en savoir plus sur cette prestation
+                            </button>
+                        </Link>
+                    </div>
+                ))}
             </div>
         </section>
+        
     )
 }
