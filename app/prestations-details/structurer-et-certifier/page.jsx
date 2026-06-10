@@ -1,4 +1,5 @@
 import { getPrestationsDetailByPrestationId } from '@/server/PrestationsDetailDal'
+import "../../../styles/prestations/structurer-certifier.css"
 
 export default async function FormerEtAccompagner() {
     const details = await getPrestationsDetailByPrestationId(3)

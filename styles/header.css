@@ -3,11 +3,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-header a {
-    margin-left: 20px;
-}
-
 img {
     max-width: 100%;
     height: auto;

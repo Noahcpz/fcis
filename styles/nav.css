@@ -8,6 +8,12 @@
     transition: filter 0.15s;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .nav-principal-marge{
     margin-right: 40px;
 }
@@ -17,6 +23,28 @@
     cursor: pointer;
 }
 
+.nav-liste {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.liste-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    list-style: none;
+    gap: 10px;
+    z-index: 100;
+    min-width: 2
+    px;
+}
+
 nav a {
-    margin-left: 20px;
+    margin: 0;
 }
