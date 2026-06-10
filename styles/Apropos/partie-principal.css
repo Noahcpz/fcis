@@ -1,14 +1,14 @@
-.intro-texte{
+.intro-texte {
     color: rgb(223, 184, 85);
     font-family: "Raleway-2";
     font-style: italic;
-    font-weight:bolder;
+    font-weight: bolder;
     text-align: center;
-    padding-top:40px;
+    padding-top: 40px;
     font-size: 30px;
 }
 
-.paragraphe-1,.paragraphe-2 {
+.paragraphe-1, .paragraphe-2,.paragraphe-3{
     color: white;
     max-width: 41ch;
     margin: 0 auto;
@@ -22,21 +22,37 @@
     font-family: "Raleway-2";
 }
 
-li{
+.expertise-liste {
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 40px;
+}
+
+.expertise-liste li {
     color: white;
     max-width: 50ch;
     margin: 0 auto;
     line-height: 1.8;
     text-align: center;
     font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    opacity: 0.4;
+    opacity: 0.5;
     transition: opacity 1.5s ease;
     font-family: "Raleway-2";
+    font-size: 22px;
 }
 
-section:hover .paragraphe-1,section:hover .paragraphe-2
-,section:hover li {
+.bloc-passion:hover .paragraphe-1 {
+    opacity: 1;
+}
+
+.bloc-approche:hover .paragraphe-3 {
+    opacity: 1;
+}
+
+
+.bloc-expertise:hover .paragraphe-2,
+.bloc-expertise:hover .expertise-liste li {
     opacity: 1;
 }
