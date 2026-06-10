@@ -1,8 +1,10 @@
+import SpitchIntro from "../../components/Apropos/spitch-intro"
+import PartiePrincipal from "../../components/Apropos/partie-principal"
 export default function APropos(){
     return (
-        <h1>
-            A propos
-        </h1>
-        
+        <section>
+            <SpitchIntro />
+            <PartiePrincipal />
+        </section>
     )
 }

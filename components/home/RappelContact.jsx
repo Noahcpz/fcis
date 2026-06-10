@@ -15,12 +15,6 @@ export default function RappelContact(){
                 <Link href="/contact">
                     <button className="contact-primaire">Contactez-nous</button>
                 </Link>
-
-                <Link href="/prestations-catalogues">
-
-                    <button className="prestation-secondaire">Voir nos prestations</button>
-                    
-                </Link>
             </div>
         </section>
     )

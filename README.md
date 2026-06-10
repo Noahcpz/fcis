@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FCIS — Site Vitrine Cybersécurité
 
-## Getting Started
+Site vitrine pour FCIS, consultant indépendant spécialisé en cybersécurité, gouvernance, risques et conformité (GRC).
 
-First, run the development server:
+## Stack technique
+
+- **Framework** : Next.js 16.2.6 (App Router)
+- **Base de données** : PostgreSQL via Neon
+- **ORM** : pg (node-postgres)
+- **UI** : React 19, FontAwesome
+- **Déploiement** : Vercel
+
+## Prérequis
+
+- Node.js 18+
+- Un projet [Neon](https://neon.tech) avec les tables `prestations_cards` et `prestations_detail`
+
+## Installation
+
+```bash
+git clone https://github.com/Noahcpz/fcis.git
+cd fcis
+npm install
+```
+
+## Variables d'environnement
+
+Crée un fichier `.env` à la racine :
+
+```env
+DATABASE_URL=postgresql://user:password@host/neondb?sslmode=require
+```
+
+## Lancer le projet
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvre [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Commande | Description |
+|----------|-------------|
+| `npm run dev` | Lance le serveur de développement |
+| `npm run build` | Build de production |
+| `npm run start` | Lance le serveur de production |
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+app/                  # Pages (App Router)
+├── api/              # Routes API
+│   ├── Prestations/
+│   └── PrestationsDetail/
+├── prestations-details/  # Pages détail par prestation
+├── a-propos/
+├── contact/
+└── mentions-legales/
+components/           # Composants React
+server/               # DAL + connexion DB
+styles/               # CSS
