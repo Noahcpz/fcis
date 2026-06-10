@@ -1,7 +1,11 @@
+import Createur from "../../components/mentionsLegales/createur"
+import User from "../../components/mentionsLegales/user"
+
 export default function MentionsLegales(){
     return (
-        <h1>
-            Mentions Legales
-        </h1>
+        <section>
+            <Createur />
+            <User />
+        </section>
     )
 }

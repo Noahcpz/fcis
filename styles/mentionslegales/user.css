@@ -1,0 +1,22 @@
+.generique {
+    padding: 0px 80px 40px 80px;
+}
+
+.generique h3 {
+    color: rgb(223, 184, 85);
+    font-family: "Raleway-2";
+    font-style: italic;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.generique p {
+    color: white;
+    font-family: "Raleway-2";
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0.8;
+    text-align: left;
+}

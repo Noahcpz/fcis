@@ -1,0 +1,28 @@
+.information-prog {
+    padding: 40px 80px;
+}
+
+.information-prog h3 {
+    color: rgb(223, 184, 85);
+    font-family: "Raleway-2";
+    font-style: italic;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.information-prog ul {
+    list-style: none;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.information-prog li {
+    color: white;
+    font-family: "Raleway-2";
+    font-size: 18px;
+    line-height: 1.8;
+    opacity: 0.8;
+    text-align: left;
+}
