@@ -1,9 +1,12 @@
 import "../../styles/contact/contact.css"
 
+import Image from "next/image"
+
 export default function FicheContact() {
     return (
         <section className="contact">
             <h1>Fiche de Contact</h1>
+
             <h2>Veuillez inscrire vos informations ici si vous cherchez à nous contacter</h2>
 
             <label htmlFor="email">Votre adresse mail</label>

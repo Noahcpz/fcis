@@ -55,7 +55,6 @@ input {
     cursor: pointer;
 }
 
-
 textarea {
     width: 400px;
     padding: 10px;
@@ -67,7 +66,6 @@ textarea {
     line-height: 1.5;
     resize: vertical;
 }
-
 
 .submit {
     margin-top: 20px;
