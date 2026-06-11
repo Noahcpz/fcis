@@ -1,8 +1,14 @@
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 60px;
+}
+
+.hero-img {
+    object-fit: cover;
+    border-radius: 20%;
+    opacity: 30%;
 }
 
 .hero a {
@@ -13,19 +19,20 @@
 }
 
 .hero p {
-    font-size: 18px;
-    font-family: 'source-sans-3', sans-serif;
+    font-size: 22px;
+    font-family: 'Raleway-2', sans-serif;
     font-style: italic;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
     letter-spacing: 1px;
     line-height: 2;
+    text-align: center;
 }
 
 .spitch-intro {
     color: white;
     font-size: 15px;
-    font-family: "source-sans-3";
+    font-family: "Raleway-2";
     padding-top: 20px;
     line-height: 1.8;
     letter-spacing: 0.5px;
