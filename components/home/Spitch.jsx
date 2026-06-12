@@ -16,25 +16,25 @@ export default function Spitch() {
         </p>    
         <h3 className="titre-reassurance">Référentiels et normes maîtrisées</h3>
         <div className="reassurance-certifs-conteneur">
+            <div className="reassurance-certifs">
+                <Image src="/img/cybervadis.png" alt="CyberVadis" width={200} height={150}/>
+                <h4 className="nom-spitch">CyberVadis</h4>
+            </div>
           <div className="reassurance-certifs">
             <Image src="/img/iso-27001.png" alt="ISO 27001" width={150} height={100}/>
-            <h4>ISO 27001</h4>
+            <h4 className="nom-spitch">ISO 27001</h4>
           </div>
           <div className="reassurance-certifs">
                 <Image src="/img/iso-27005.png" alt="iso 27005" width={150} height={100}/>
-                <h4>ISO 27005</h4>
+                <h4 className="nom-spitch">ISO 27005</h4>
           </div>
           <div className="reassurance-certifs">
                 <Image src="/img/nis2.webp" alt="nis" width={150} height={100}/>
-                <h4>NIS2</h4>
+                <h4 className="nom-spitch">NIS2</h4>
           </div>
           <div className="reassurance-certifs">
-                <Image src="/img/ebios-rm.png" alt="EBIOS RM" width={150} height={100}/>
-                <h4>EBIOS RM</h4>
-          </div>
-          <div className="reassurance-certifs">
-                <Image src="/img/cybervadis.png" alt="CyberVadis" width={150} height={100}/>
-                <h4>CyberVadis</h4>
+                <Image src="/img/ebios-rm.png" alt="EBIOS RM" width={200} height={150}/>
+                <h4 className="nom-spitch">EBIOS RM</h4>
           </div>
         </div>
     </section>

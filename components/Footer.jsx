@@ -1,4 +1,4 @@
-import Link from "next/link"
+    import Link from "next/link"
 import"../styles/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone,faEnvelope,faHome,faCopyright } from '@fortawesome/free-solid-svg-icons'

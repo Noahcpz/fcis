@@ -1,7 +1,5 @@
 import "../../styles/contact/contact.css"
 
-import Image from "next/image"
-
 export default function FicheContact() {
     return (
         <section className="contact">
@@ -38,7 +36,7 @@ export default function FicheContact() {
             <label htmlFor="message">Votre message</label>
             <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message libre ici..." />
 
-            <button className="submit">submit</button>
+            <button className="submit">envoyer ma demande</button>
         </section>
     )
 }
