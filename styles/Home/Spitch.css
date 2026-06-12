@@ -37,7 +37,7 @@
     padding-bottom: 50px;
 }
 
-.reassurance-certifs {
+.reassurance-certifs,.reassurance-certifs-27005 {
     color: #DBC078;
     border: 3px solid #DBC078;
     padding: 10px 20px;
@@ -51,6 +51,20 @@
     opacity: 80%;
     padding-bottom: 30px;
     padding-top: 30px;
+}
+
+.reassurance-certifs:hover {
+    transform: scale(1.1);  
+    border-color: white;
+    filter: brightness(1.8);
+    cursor:default; 
+}
+
+.reassurance-certifs-27005:hover {
+    transform: scale(1.1);  
+    border-color: white;
+    filter: brightness(1.1);
+    cursor:default; 
 }
 
 .nom-spitch{

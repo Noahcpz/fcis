@@ -24,7 +24,7 @@ export default function Spitch() {
             <Image src="/img/iso-27001.png" alt="ISO 27001" width={150} height={100}/>
             <h4 className="nom-spitch">ISO 27001</h4>
           </div>
-          <div className="reassurance-certifs">
+          <div className="reassurance-certifs-27005">
                 <Image src="/img/iso-27005.png" alt="iso 27005" width={150} height={100}/>
                 <h4 className="nom-spitch">ISO 27005</h4>
           </div>
