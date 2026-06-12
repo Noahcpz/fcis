@@ -1,3 +1,4 @@
+"use client"
 import "../../styles/contact/contact.css"
 
 export default function FicheContact() {
@@ -22,7 +23,16 @@ export default function FicheContact() {
             </div>
 
             <label htmlFor="tel">Votre numéro de téléphone</label>
-            <input type="tel" id="tel" placeholder="06 00 00 00 00" />
+            <input 
+                type="tel" 
+                id="tel" 
+                placeholder="06 00 00 00 00"
+                pattern="[0-9\s]{10,14}"
+                maxLength="14"
+                onKeyPress={(e) => {
+                    if (!/[0-9\s]/.test(e.key)) e.preventDefault()
+                }}
+            />
 
             <label htmlFor="entreprise">Votre entreprise</label>
             <input type="text" id="entreprise" placeholder="Nom de votre entreprise" />
