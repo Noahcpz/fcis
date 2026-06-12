@@ -3,6 +3,7 @@ footer {
     margin-top: auto;
     text-align: left;
     padding: 20px 40px;
+    cursor: default;    
 }
 
 footer p {
@@ -36,7 +37,12 @@ svg {
     font-size: 17.5px;
 }
 
+.nav-icone{
+    margin-left: 8px;
+}
+
 .icone {
     color: goldenrod;
     margin-right: 8px;
+    cursor: default;
 }

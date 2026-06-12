@@ -12,12 +12,14 @@
 }
 
 .spitch-fcis p {
-    max-width: 700px;
+    max-width: 875px;
     margin: 0 auto;
     font-size: 22px;
     font-family: 'Raleway-2', sans-serif;
     font-style: italic;
     padding-bottom: 50px;
+    line-height: 2.2;
+    letter-spacing: 1.4px;
 }
 
 .reassurance {
@@ -30,8 +32,9 @@
 
 .reassurance-certifs-conteneur {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .reassurance-certifs {
@@ -44,13 +47,23 @@
     align-items: center;
     gap: 8px;
     justify-content: space-between;
+    background-image:url("/img/spitch-background.webp");
+    opacity: 80%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.nom-spitch{
+    font-size: 20px;
+    font-family: 'Raleway-2', sans-serif;
 }
 
 .titre-reassurance {
     color: #C7AE6A;
     font-size: 30px;
-    padding-bottom: 50px;
-    font-family: "source-sans-3", sans-serif;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    font-family: "Raleway-2", sans-serif;
     font-style: italic;
 }
 

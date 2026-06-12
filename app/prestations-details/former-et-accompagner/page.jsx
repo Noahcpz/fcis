@@ -1,23 +1,25 @@
 import { getPrestationsDetailByPrestationId } from '@/server/PrestationsDetailDal'
-import "../../../styles/prestations/former-accompagner.css"
+import "../../../styles/prestations/prestations.css"
 
-export default async function StructurerEtCertifier() {
-    const details = await getPrestationsDetailByPrestationId(2)
+export default async function FormerEtAccompagner() {
+    const details = await getPrestationsDetailByPrestationId(3)
+    console.log('details:', details)
     const detail = details[0]
 
     return (
-        <div>
+        <div className="prestation-detail">
             <h1>{detail.titre}</h1>
             <h2>{detail.sous_titre}</h2>
-            <p>{detail.explication}</p>
+            <p className='explication'>{detail.explication}</p>
             <ul>
-                <li>{detail.detail_1}</li>
-                <li>{detail.detail_2}</li>
-                <li>{detail.detail_3}</li>
-                <li>{detail.detail_4}</li>
+                <li className='detail'>{detail.detail_1}</li>
+                <li className='detail'>{detail.detail_2}</li>
+                <li className='detail'>{detail.detail_3}</li>
+                <li className='detail'>{detail.detail_4}</li>
             </ul>
-            <p>Livrable : {detail.livrable}</p>
-            <p>Prix : {detail.price} €</p>
+            <div className="separateur"></div>
+            <p className='livrable-prix'>Livrable : {detail.livrable}</p>
+            <p className='livrable-prix'>Prix : {detail.price} €</p>
         </div>
     )
 }
