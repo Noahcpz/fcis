@@ -4,13 +4,11 @@ import Link from "next/link"
 
 export default async function Cards() {
     const prestations = await getAllPrestations()
-    console.log(prestations)
     const slugs = {
         7: 'structurer-et-certifier',
         8: 'evaluer-et-cartographier',
         9: 'former-et-accompagner'
     }   
-
     return (
         <section className="cards-prestations">
             <h2>Comment FCIS vous accompagne</h2>

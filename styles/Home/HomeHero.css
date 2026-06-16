@@ -41,3 +41,11 @@
     background: linear-gradient(to bottom, #000000, #1a1a1a);
     padding-bottom: 70px;
 }
+
+
+
+@media (max-width:768px){
+    .hero-img {
+        display: none;
+    }
+}

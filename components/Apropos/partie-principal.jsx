@@ -2,7 +2,7 @@ import "../../styles/Apropos/partie-principal.css"
 
 export default function PartiePrincipal(){
     return (
-        <section>
+        <section className="partie-principal">
             <div className="bloc-passion">
                 <p className="intro-texte">La passion</p>
                 <p className="paragraphe-1">

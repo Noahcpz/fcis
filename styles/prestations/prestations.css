@@ -131,8 +131,17 @@ ul {
     transition: transform 0.2s;
     opacity: 0.5;
 }
+
 .bn-contact:hover {
     transform: scale(1.05);
     filter: brightness(1.9);
     opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .bn-contact {
+        opacity: 1;
+        margin-top: 60px;
+        align-items: center;
+    }
 }

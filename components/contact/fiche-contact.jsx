@@ -12,14 +12,17 @@ export default function FicheContact() {
             <input type="email" id="email" placeholder="exemple@gmail.com" />
 
             <div className="nom-prenom">
+                
                 <div className="champ">
                     <label htmlFor="nom">Votre nom</label>
                     <input type="text" id="nom" placeholder="Indiquez votre nom" />
                 </div>
+
                 <div className="champ">
                     <label htmlFor="prenom">Votre prénom</label>
                     <input type="text" id="prenom" placeholder="Indiquez votre prénom" />
                 </div>
+
             </div>
 
             <label htmlFor="tel">Votre numéro de téléphone</label>
