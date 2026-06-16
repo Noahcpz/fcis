@@ -24,10 +24,10 @@ export default async function StructurerEtCertifier() {
             </Link>
             <div className="nav-prestations">
                 <Link href="/prestations-details/evaluer-et-cartographier">
-                    <button className="bn-contact">← prestation précédente</button>
+                    <button className="bn">← prestation précédente</button>
                 </Link>
                 <Link href="/prestations-details/former-et-accompagner">
-                    <button className="bn-contact">prestation suivante →</button>
+                    <button className="bn">prestation suivante →</button>
                 </Link>
             </div>
         </div>

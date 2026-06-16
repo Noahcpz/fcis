@@ -6,3 +6,16 @@
     padding-top: 20px;
     font-size: 22px;
 }
+@media (max-width:768px){
+    .spitch-intro{
+        padding-top: 30px;
+        padding-bottom:20px;
+    }
+    .a-propos{
+        padding: 50px;
+        padding-bottom: 30px;
+    }
+    .texte-h3{
+        padding-bottom: 20px;
+    }
+}

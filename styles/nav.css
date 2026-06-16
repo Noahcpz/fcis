@@ -65,3 +65,20 @@ nav a {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    nav {
+        gap: 8px 12px;
+        flex-wrap: wrap;
+        padding: 4px 8px;
+        margin-top: 20px;
+    }
+
+    .nav-principal, .nav-principal-marge {
+        font-size: 18px;
+    }
+
+    .nav-principal-marge {
+        margin-right: 0;
+    }
+}
+

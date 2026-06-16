@@ -6,7 +6,10 @@ export default function HomeHero() {
         <section className="hero">
             <Image src="/img/background-image.avif" alt="decoration" width={400} height={700} className="hero-img"/>
             <section className="spitch-intro">
-                <h1>Prenez le contrôle de votre exposition cyber</h1>
+                <h1>
+                    Prenez le contrôle de votre exposition cyber
+                </h1>
+
                 <p>
                     parce qu'une bonne stratégie de sécurité se construit sur 
                     la connaissance de vos vrais risques,

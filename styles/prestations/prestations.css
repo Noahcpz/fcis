@@ -3,13 +3,11 @@
     margin: 0 auto;
     padding: 40px;
 }
-
 .prestation-titre {
     text-align: left;
     font-family: "Raleway-2";
     color: #C7AE6A;
 }
-
 .prestation-sous-titre {
     text-align: left;
     font-family: "Raleway-2";
@@ -17,11 +15,9 @@
     font-size: 22px;
     padding-top: 10px;
 }
-
 .prestation-detail a {
     text-decoration: none;
 }
-
 .explication {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -37,32 +33,17 @@
     background-image: url("/img/background-image.avif");
     cursor: default;
 }
-
 .explication:hover { 
     opacity: 1; 
 }
-
-.nav-prestations{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-    text-align: left;
-    font-size: 20px;
-    font-family: "Raleway-2";
-    text-wrap: balance;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 30px 0;
-    opacity: 0.9;
-    background-image: url("/img/background-image.avif");
-    cursor: default;
+.nav-prestations {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
     margin-top: 50px;
 }
-
-.nav-prestations:hover{
-    transform:scale(1.05)
+.nav-prestations a {
+    flex: 1;
 }
 ul {
     list-style: none;
@@ -73,7 +54,6 @@ ul {
     max-width: 1000px;
     padding: 0;
 }
-
 .detail {
     color: gold;
     text-align: left;
@@ -85,12 +65,10 @@ ul {
     background-image: url("/img/background-image.avif");
     cursor: default;
 }
-
 .detail:hover { 
     background: rgba(255, 255, 255, 0.08);
-    transform:scale(1.05)
+    transform: scale(1.05);
 }
-
 .separateur {
     width: 100px;
     height: 1px;
@@ -98,7 +76,6 @@ ul {
     margin: 30px 0;
     opacity: 0.4;
 }
-
 .livrable-prix {
     color: gold;
     text-align: left;
@@ -107,13 +84,11 @@ ul {
     padding-top: 20px;
     opacity: 0.7;
 }
-
 .livrable-prix:last-child {
     font-size: 26px;
     opacity: 1;
     padding-top: 10px;
 }
-
 .bn-contact {
     display: inline-block;
     margin: 40px 0 0 0;
@@ -131,17 +106,44 @@ ul {
     transition: transform 0.2s;
     opacity: 0.5;
 }
-
 .bn-contact:hover {
     transform: scale(1.05);
     filter: brightness(1.9);
     opacity: 0.9;
 }
-
+.bn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: gold;
+    font-size: 20px;
+    font-family: "Raleway-2";
+    font-style: italic;
+    background-image: url("/img/background-image.avif");
+    background-size: cover;
+    background-position: center;
+    padding: 12px 20px;
+    border: 1px solid gold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    opacity: 0.5;
+}
+.bn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.9);
+    opacity: 0.9;
+}
 @media (max-width: 768px) {
     .bn-contact {
         opacity: 1;
         margin-top: 60px;
-        align-items: center;
+        width: 100%;
+    }
+    .bn {
+        opacity: 1;
+        font-size: 16px;
+        padding: 10px 12px;
     }
 }
