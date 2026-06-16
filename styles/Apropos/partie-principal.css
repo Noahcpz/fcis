@@ -25,19 +25,20 @@
 
 .expertise-liste {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
-    padding: 20px;
+    padding: 0 40px;
+    width: 100%;
 }
 
 .expertise-liste li {
     color: white;
-    max-width: 50ch;
+    max-width: 60%;
     margin: 0 auto;
     line-height: 1.8;
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     opacity: 0.5;
     transition: opacity 1.5s ease;
     font-family: "Raleway-2";
@@ -58,9 +59,24 @@
 
 .bloc-expertise {
     position: relative;
-} 
+}
 
 .bloc-expertise > * {
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .partie-principal {
+        text-align: center;
+    }
+    .expertise-liste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .expertise-liste li {
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
 }

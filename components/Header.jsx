@@ -10,7 +10,8 @@ export default function Header() {
                 <Image src="/img/fcis-logo.png" 
                 alt="Logo FCIS" 
                 width={150} 
-                height={50}/>
+                height={50}
+                className="image-fcis"/>
             </Link>
             <Nav />
         </header>

@@ -74,3 +74,10 @@ button:hover {
     color: black;
     transform: scale(1.05);
 }
+
+@media(max-width:768px){
+    .contact-primaire{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,13 +1,28 @@
-.nav-principal,.nav-principal-marge{
-    color:gold;
+.nav-principal, .nav-principal-marge {
+    color: gold;
     text-decoration: none;
     font-size: 17.5px;
-    font-family: "source-sans-3",sans-serif;
+    font-family: "source-sans-3", sans-serif;
     font-style: italic;
     filter: brightness(0.7);
     transition: filter 0.1s;
-    background-color: rgb(31, 30, 30);
     border-radius: 20px;
+    position: relative;
+}
+
+.nav-principal::after, .nav-principal-marge::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: gold;
+    transition: width 0.3s ease;
+}
+
+.nav-principal:hover::after, .nav-principal-marge:hover::after {
+    width: 100%;
 }
 
 nav {
@@ -16,11 +31,11 @@ nav {
     gap: 30px;
 }
 
-.nav-principal-marge{
+.nav-principal-marge {
     margin-right: 40px;
 }
 
-.nav-principal:hover,.nav-principal-marge:hover {
+.nav-principal:hover, .nav-principal-marge:hover {
     filter: brightness(2);
     cursor: pointer;
 }
@@ -43,10 +58,10 @@ nav {
     list-style: none;
     gap: 10px;
     z-index: 100;
-    min-width: 2
-    px;
+    min-width: 200px;
 }
 
 nav a {
     margin: 0;
 }
+
