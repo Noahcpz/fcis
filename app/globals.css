@@ -2,10 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-}
-
-:root {
-}
+}   
 
 @font-face {
     font-family: "Raleway";
@@ -45,9 +42,9 @@ body::before {
     width: 100px;
     height: 100px;
     background-color: white;
-    opacity:5%;
+    opacity: 5%;
     border-radius: 50%;
-    pointer-events:none;
+    pointer-events: none;
     z-index: 9999;
 }
 
@@ -81,8 +78,7 @@ h2 {
     animation: apparition 1s ease-in-out;
 }
 
-
-@media (max-width:768px){
+@media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
         text-align: center;
@@ -92,16 +88,13 @@ h2 {
         font-size: 2rem;
         text-align: center;
     }
-    
+
     html, body {
-    overflow-x: hidden;
-    max-width: 100%;
+        overflow-x: hidden;
+        max-width: 100%;
     }
-    .image-fcis{
-        align-items: left;
-        margin-top: 100px;
-        width: 400px;
-        height: 15px;
+
+    body {
+        padding-top: 100px;
     }
-    
 }

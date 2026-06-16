@@ -46,3 +46,15 @@ svg {
     margin-right: 8px;
     cursor: default;
 }
+
+@media (max-width:768px){
+    .texte-icone{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nav-icone{
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+}

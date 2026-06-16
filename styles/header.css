@@ -2,9 +2,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
+
 img {
     max-width: 100%;
     height: auto;
     margin-left: 10px;
+}
+
+.image-fcis {
+    width: 150px !important;
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 8px 16px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .image-fcis {
+        width: 120px !important;
+        height: auto !important;
+    }
 }

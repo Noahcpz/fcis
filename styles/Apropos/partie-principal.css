@@ -70,6 +70,9 @@
     .partie-principal {
         text-align: center;
     }
+    .paragraphe-1, .paragraphe-2, .paragraphe-3 {
+        opacity: 1;
+    }
     .expertise-liste {
         display: flex;
         flex-direction: column;
@@ -78,5 +81,6 @@
     .expertise-liste li {
         font-size: 18px;
         padding-bottom: 50px;
+        opacity: 1;
     }
 }
