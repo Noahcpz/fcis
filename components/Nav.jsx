@@ -35,7 +35,6 @@ export default function Nav() {
                     </ul>
                 )}
             </div>
-
             <Link href="/a-propos" className="nav-principal-marge">A propos</Link>
         </nav>
     )
