@@ -49,16 +49,30 @@ nav {
 .liste-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
-    border: 1px solid gold;
     border-radius: 10px;
     padding: 10px;
     list-style: none;
     gap: 10px;
     z-index: 100;
-    min-width: 200px;
+    min-width: 220px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/menu-nav.png");
+}
+
+.liste-menu li {
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.liste-menu li:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 nav a {
@@ -72,13 +86,14 @@ nav a {
         padding: 4px 8px;
         margin-top: 20px;
     }
-
     .nav-principal, .nav-principal-marge {
         font-size: 18px;
     }
-
     .nav-principal-marge {
         margin-right: 0;
     }
+    .liste-menu{
+        gap:5px;
+        min-width: 100px; 
+    }
 }
-
