@@ -23,6 +23,12 @@ label {
     margin-bottom: 15px;
 }
 
+.honeypot {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
 input {
     width: 400px;
     padding: 10px;  
