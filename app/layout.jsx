@@ -1,25 +1,16 @@
-"use client"
-import { useEffect, useRef } from "react"
 import "./globals.css"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import MouseTracker from "../components/MouseTracker"
+import PageTransition from "../components/PageTransition"
 
 export default function RootLayout({ children }) {
-    const bodyRef = useRef(null)
-
-    useEffect(() => {
-        const handleMove = (e) => {
-            document.body.style.setProperty('--x', `${e.clientX}px`)
-            document.body.style.setProperty('--y', `${e.clientY}px`)
-        }
-        window.addEventListener('mousemove', handleMove)
-        return () => window.removeEventListener('mousemove', handleMove)
-    }, [])  
-
     return (
         <html lang="fr">
             <body>
-                <svg xmlns="http://www.w3.org/2000/svg" 
+                <MouseTracker />
+                <svg xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
                     style={{position: "fixed", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 0}}>
                     <line x1="150%" y1="0" x2="50%" y2="100%" stroke="#DBC078" strokeWidth="1" opacity="0.4"/>
                     <line x1="120%" y1="0" x2="20%" y2="100%" stroke="#DBC078" strokeWidth="1" opacity="0.4"/>
@@ -30,8 +21,8 @@ export default function RootLayout({ children }) {
                     <line x1="140%" y1="0" x2="40%" y2="100%" stroke="#DBC078" strokeWidth="1" opacity="0.4"/>
                     <line x1="200%" y1="0" x2="80%" y2="100%" stroke="#DBC078" strokeWidth="1" opacity="0.4"/>
                 </svg>
-                <Header />        
-                {children}
+                <Header />
+                <PageTransition>{children}</PageTransition>
                 <Footer />
             </body>
         </html>

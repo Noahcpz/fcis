@@ -63,14 +63,14 @@ export default function FicheContact() {
                 <label htmlFor="prestation">Prestation</label>
                 <input type="text" id="prestation" name="prestation" placeholder="Indiquez la prestation que vous souhaitez" />
                 <label htmlFor="rgpd">Consentez-vous au RGPD ?</label>
-                <input type="checkbox" id="rgpd" name="rgpd" className="rgpd" />
+                <input type="checkbox" id="rgpd" name="rgpd" className="rgpd" required />
                 <label htmlFor="message">Votre message</label>
                 <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message libre ici..." required />
 
                 <div className="cf-turnstile" data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}></div>
 
                 {statut && (
-                    <p className={statut.type === "success" ? "msg-success" : "msg-error"}>
+                    <p className={statut.type === "success" ? "msg-success" : "msg-error"} aria-live="polite">
                         {statut.message}
                     </p>
                 )}

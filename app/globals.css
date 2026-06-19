@@ -78,6 +78,27 @@ h2 {
     animation: apparition 1s ease-in-out;
 }
 
+.page-transition{
+    animation: pageFadeIn 0.35s ease;
+}
+
+@keyframes pageFadeIn{
+    from{
+        opacity:0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+:focus-visible {
+    outline: 2px solid #DBC078;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -96,5 +117,11 @@ h2 {
 
     body {
         padding-top: 100px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1, h2, .page-transition {
+        animation: none;
     }
 }

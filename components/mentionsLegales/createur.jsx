@@ -5,9 +5,9 @@ export default function Createur(){
             <h1>
                 Mentions Légales
             </h1>
-            <h3>
+            <h2>
                 éditeur du site :
-            </h3>
+            </h2>
             <ul>
                 <li>  
                     Nom : esteban fereira
@@ -28,9 +28,9 @@ export default function Createur(){
                     Siret : à compléter
                 </li>
             </ul>
-            <h3>
+            <h2>
                 Hébergement
-            </h3>
+            </h2>
             <ul>
                 <li>
                     Hébergeur : Vercel Inc.
@@ -42,8 +42,6 @@ export default function Createur(){
                     Site : vercel.com
                 </li>
             </ul>
-            <h3>
-            </h3>
         </section>
     )
 }

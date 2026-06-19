@@ -39,22 +39,21 @@ export async function envoyerContact(formData) {
     const message = formData.get('message')
     const rgpd = formData.get('rgpd') === 'on'
 
+    if (!nom || !prenom || !email || !message) {
+        return { success: false, error: "Veuillez remplir tous les champs obligatoires." }
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
         return { success: false, error: "Adresse mail invalide." }
-    }
-
-    if (message.length > 5000) {
-        return { success: false, error: "Votre message est trop long (5000 caractères maximum)." }
     }
 
     if (nom.length > 100 || prenom.length > 100) {
         return { success: false, error: "Le nom ou le prénom est trop long." }
     }
 
-    
-    if (!nom || !prenom || !email || !message) {
-        return { success: false, error: "Veuillez remplir tous les champs obligatoires." }
+    if (message.length > 5000) {
+        return { success: false, error: "Votre message est trop long (5000 caractères maximum)." }
     }
 
     if (!rgpd) {

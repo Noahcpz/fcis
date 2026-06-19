@@ -37,7 +37,7 @@ export default function Spitch() {
           </div>
 
           <div className="reassurance-certifs">
-                <Image src="/img/nis2.webp" alt="nis" width={150} height={100}/>
+                <Image src="/img/nis2.webp" alt="NIS2" width={150} height={100}/>
                 <h4 className="nom-spitch">NIS2</h4>
           </div>
 

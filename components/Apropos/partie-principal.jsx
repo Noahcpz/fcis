@@ -4,10 +4,9 @@ export default function PartiePrincipal(){
     return (
         <section className="partie-principal">
             <div className="bloc-passion">
-                
-                <p className="intro-texte">
+                <h2 className="intro-texte">
                     La passion
-                </p>
+                </h2>
                 <p className="paragraphe-1">
                     Passionnée de cybersécurité depuis mes débuts,
                     j'ai fait de la gouvernance, du risque
@@ -20,9 +19,9 @@ export default function PartiePrincipal(){
             </div>
 
             <div className="bloc-expertise">
-                <p className="intro-texte">
+                <h2 className="intro-texte">
                     L'Expertise
-                </p>
+                </h2>
 
                 <p className="paragraphe-2">
                     J'interviens sur l'ensemble du spectre GRC, avec
@@ -58,9 +57,9 @@ export default function PartiePrincipal(){
             
             <div className="bloc-approche">
 
-                <p className="intro-texte">
+                <h2 className="intro-texte">
                     L'approche
-                </p>
+                </h2>
 
                 <p className="paragraphe-3">
                     Chaque misssion est différente. J'adapte mes

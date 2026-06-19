@@ -6,13 +6,32 @@ import { useState } from "react"
 export default function Nav() {
     const [open, setOpen] = useState(false)
 
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault()
+            setOpen(!open)
+        }
+        if (e.key === "Escape") {
+            setOpen(false)
+        }
+    }
+
     return (
         <nav>
             <Link href="/" className="nav-principal">Accueil</Link>
             <Link href="/contact" className="nav-principal">Contact</Link>
             
             <div className="nav-liste">
-                <span className="nav-principal" onClick={() => setOpen(!open)} style={{cursor: "pointer"}}>
+                <span 
+                    className="nav-principal" 
+                    onClick={() => setOpen(!open)} 
+                    onKeyDown={handleKeyDown}
+                    tabIndex={0}
+                    role="button"
+                    aria-expanded={open}
+                    aria-haspopup="true"
+                    style={{cursor: "pointer"}}
+                >
                     Prestations
                 </span>
                 {open && (
