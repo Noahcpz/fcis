@@ -17,7 +17,7 @@
     font-size: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
-    opacity: 0.4;
+    opacity: 0.8;
     transition: opacity 1.5s ease;
     font-family: "Raleway-2";
     cursor: default;
@@ -39,22 +39,22 @@
     line-height: 1.8;
     text-align: center;
     font-size: 24px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 1.5s ease;
     font-family: "Raleway-2";
 }
 
 .bloc-passion:hover .paragraphe-1 {
-    opacity: 1;
+    opacity: 2;
 }
 
 .bloc-approche:hover .paragraphe-3 {
-    opacity: 1;
+    opacity: 2;
 }
 
 .bloc-expertise:hover .paragraphe-2,
 .bloc-expertise:hover .expertise-liste li {
-    opacity: 1;
+    opacity: 2;
 }
 
 .bloc-expertise {
